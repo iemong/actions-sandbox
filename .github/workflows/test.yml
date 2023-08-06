@@ -13,3 +13,7 @@ jobs:
         run: env
       - name: Display custom secrets that add in the repository settings
         run: echo "Hello, ${{ secrets.TEST_DAYO }}!"
+      - name: Display custom env that add in the repository settings
+        run: echo "Hello, ${{ env.TEST_DESU }}!"
+      - name: Display custom env that add in the repository settings
+        run: echo "Hello, ${{ vars.TEST_DESU }}!"
