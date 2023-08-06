@@ -8,6 +8,7 @@ jobs:
   display:
     name: Display
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Display environment variables
         run: env
@@ -19,4 +20,3 @@ jobs:
         run: echo "Hello, ${{ vars.TEST_DESU }}!"
       - name: Display custom env that add in the repository settings
         run: echo "Hello, ${{ vars.VARIABLE }}!"
-        environment: protection
