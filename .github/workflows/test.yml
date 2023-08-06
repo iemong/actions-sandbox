@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Display environment variables
         run: env
+      - name: Display custom secrets that add in the repository settings
+        run: echo "Hello, ${{ secrets.TEST_DAYO }}!"
