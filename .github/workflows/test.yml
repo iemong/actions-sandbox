@@ -17,3 +17,5 @@ jobs:
         run: echo "Hello, ${{ env.TEST_DESU }}!"
       - name: Display custom env that add in the repository settings
         run: echo "Hello, ${{ vars.TEST_DESU }}!"
+      - name: Display custom env that add in the repository settings
+        run: echo "Hello, ${{ vars.VARIABLE }}!"
